@@ -18,6 +18,8 @@ set history=1000
 au BufNewFile,BufRead  svn-commit.* setf svn
 
 
+let g:fuzzy_ignore = "vendor/*;public/*;"
+
 runtime macros/matchit.vim
 
 augroup mkd
@@ -27,11 +29,6 @@ augroup END
 au BufRead,BufNewFile *.tpl set filetype=smarty 
 
 " No eols
-
-"autocmd BufWritePre *.php setlocal binary
-"autocmd BufWritePre *.php setlocal noeol
-"autocmd BufWritePost *.php setlocal nobinary
-
 
 set exrc
 set secure
