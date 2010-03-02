@@ -19,6 +19,8 @@ au BufNewFile,BufRead  svn-commit.* setf svn
 
 
 let g:fuzzy_ignore = "vendor/*;public/*;"
+let mapleader = ','
+map <leader>t :FuzzyFinderTextMate<CR>
 
 runtime macros/matchit.vim
 
